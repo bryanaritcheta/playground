@@ -1,11 +1,13 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { buyCookie } from '../redux'
+import ItemContainer from './ItemContainer'
 
 function CookieContainer(props) {
   return (
     <div>
-        <h2>Number of cookies - { props.numOfCookies }</h2>
+        {/* <h2>Number of cookies - { props.numOfCookies }</h2> */}
+        <h2>Number of cookies - <ItemContainer cookie /></h2>
         <button onClick={ props.buyCookie }>Buy Cookie</button>
     </div>
   )
